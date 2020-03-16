@@ -1,0 +1,11 @@
+._*
+
+.DS_Store
+.sass-cache
+.Spotlight-V100
+.Trashes
+
+Desktop.ini
+Thumbs.db
+config.codekit3
+interstate.min.scss
