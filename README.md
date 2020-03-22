@@ -1,1 +1,3 @@
 # Interstate
+
+This is a very work in progress sCSS boilerplate with prebuilt (small yet) components library. Well, let's see what happens...
