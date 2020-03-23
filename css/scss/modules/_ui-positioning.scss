@@ -1,0 +1,89 @@
+
+// Making set of responsive display and positioning classes
+
+   @mixin make-positioning-set {
+
+     &-hidden     {display: none !important;}
+     &-invisible  {visibility: hidden !important;}
+
+     &-ltr        {float: left !important;}
+     &-rtl        {float: right !important;}
+
+     &-text {
+
+       &-center   {text-align: center !important;}
+       &-left     {text-align: left !important;}
+       &-right    {text-align: right !important;}
+
+       }
+
+     &-item {
+
+       &-middle   {position: relative; top: 50%; transform: translateY(-50%);}
+       &-center   {margin-right: auto; margin-left: auto;}
+       &-left     {margin-right: auto; margin-left: 0;}
+       &-right    {margin-right: 0; margin-left: auto;}
+
+       }
+
+     }
+
+/* Responsive display and positioning */
+
+   .is {
+
+     @include make-positioning-set;
+
+     }
+
+// Display and positioning @media variations
+
+   @include for-xs-sm {
+
+     .is-xs {
+
+       @include make-positioning-set;
+
+       }
+
+     }
+
+   @include for-sm-md {
+
+     .is-sm {
+
+       @include make-positioning-set;
+
+       }
+
+     }
+
+   @include for-md-lg {
+
+     .is-md {
+
+       @include make-positioning-set;
+
+       }
+
+     }
+
+   @include for-lg-xl {
+
+     .is-lg {
+
+       @include make-positioning-set;
+
+       }
+
+     }
+
+   @include for-xl {
+
+     .is-xl {
+
+       @include make-positioning-set;
+
+       }
+
+     }
