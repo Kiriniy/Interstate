@@ -1,0 +1,84 @@
+
+// Edit 'presets/_colors.scss' for colors customization
+
+   $default-colors: (
+
+     color-none: $color-none,
+     color-amber-a: $amber-a,
+     color-amber-b: $amber-b,
+     color-black-a: $black-a,
+     color-black-b: $black-b,
+     color-blue-a: $blue-a,
+     color-blue-b: $blue-b,
+     color-blue-gray-a: $blue-gray-a,
+     color-blue-gray-b: $blue-gray-b,
+     color-brown-a: $brown-a,
+     color-brown-b: $brown-b,
+     color-cyan-a: $cyan-a,
+     color-cyan-b: $cyan-b,
+     color-deep-orange-a: $deep-orange-a,
+     color-deep-orange-b: $deep-orange-b,
+     color-deep-purple-a: $deep-purple-a,
+     color-deep-purple-b: $deep-purple-b,
+     color-gray-a: $gray-a,
+     color-gray-b: $gray-b,
+     color-green-a: $green-a,
+     color-green-b: $green-b,
+     color-indigo-a: $indigo-a,
+     color-indigo-b: $indigo-b,
+     color-light-blue-a: $light-blue-a,
+     color-light-blue-b: $light-blue-b,
+     color-light-green-a: $light-green-a,
+     color-light-green-b: $light-green-b,
+     color-lime-a: $lime-a,
+     color-lime-b: $lime-b,
+     color-orange-a: $orange-a,
+     color-orange-b: $orange-b,
+     color-pink-a: $pink-a,
+     color-pink-b: $pink-b,
+     color-purple-a: $purple-a,
+     color-purple-b: $purple-b,
+     color-red-a: $red-a,
+     color-red-b: $red-b,
+     color-teal-a: $teal-a,
+     color-teal-b: $teal-b,
+     color-white-a: $white-a,
+     color-white-b: $white-b,
+     color-yellow-a: $yellow-a,
+     color-yellow-b: $yellow-b,
+     color-light-glass-a: $light-glass-a,
+     color-light-glass-b: $light-glass-b,
+     color-dark-glass-a: $dark-glass-a,
+     color-dark-glass-b: $dark-glass-b
+
+     );
+
+/* Default colors palette */
+
+   @each $default-color-id, $default-color in $default-colors {
+
+     .is {
+
+       &-#{$default-color-id} {
+
+         color: $default-color;
+
+       }
+
+       &-bg-#{$default-color-id} {
+
+         background-color: $default-color;
+
+         }
+
+       }
+
+     }
+
+// Frosted glass style (background only)
+
+  .is-bg-frosted-glass {
+
+    backdrop-filter: blur($frosted-level);
+
+    }

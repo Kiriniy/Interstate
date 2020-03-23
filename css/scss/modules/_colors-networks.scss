@@ -1,0 +1,41 @@
+
+// Edit 'presets/_colors.scss' for colors customization
+
+   $networks-colors: (
+
+     color-behance: $behance,
+     color-facebook: $facebook,
+     color-flickr: $flickr,
+     color-gplus: $gplus,
+     color-instagram: $instagram,
+     color-linkedin: $linkedin,
+     color-ok: $ok,
+     color-tumblr: $tumblr,
+     color-twitter: $twitter,
+     color-vimeo: $vimeo,
+     color-vk: $vk,
+     color-youtube: $youtube
+
+     );
+
+/* Networks & Services colors */
+
+   @each $network-color-id, $network-color in $networks-colors {
+
+     .is {
+
+       &-#{$network-color-id} {
+
+         color: $network-color;
+
+       }
+
+       &-bg-#{$network-color-id} {
+
+         background-color: $network-color;
+
+         }
+
+       }
+
+     }

@@ -1,0 +1,35 @@
+
+// Edit 'presets/_colors.scss' for colors customization
+
+   $brand-colors: (
+
+     color-a: $color-a,
+     color-b: $color-b,
+     color-c: $color-c,
+     color-d: $color-d,
+     color-e: $color-e,
+     color-f: $color-f
+
+     );
+
+/* Custom brand colors */
+
+   @each $brand-color-id, $brand-color in $brand-colors {
+
+     .is {
+
+       &-#{$brand-color-id} {
+
+         color: $brand-color;
+
+       }
+
+       &-bg-#{$brand-color-id} {
+
+         background-color: $brand-color;
+
+         }
+
+       }
+
+     }
