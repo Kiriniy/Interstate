@@ -1,0 +1,83 @@
+
+ /* Background image presets */
+
+.is-bg-cover {
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  }
+
+.is-bg-fixed {
+
+  background-attachment: fixed;
+
+  }
+
+ /* Responsive media presets */
+
+.is-elastic {
+
+  display: block;
+  width: 100%;
+
+  img, audio {
+
+    display: block;
+    width: 100%;
+
+    }
+
+  iframe, object, video, embed {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+    }
+
+  &.is-video {
+
+    position: relative;
+    overflow: hidden;
+    height: 0;
+
+    &.is-1x1, &.is-1by1, &.is-square {
+
+      padding-bottom: 100%;
+
+      }
+
+    &.is-4x3, &.is-4by3, &.is-tv {
+
+      padding-bottom: 75%;
+
+      }
+
+    &.is-16x9, &.is-16by9, &.is-hd {
+
+      padding-top: 56%;
+
+      }
+
+    &.is-21x9, &.is-21by9, &.is-wide {
+
+      padding-bottom: 42%;
+
+      }
+
+    &.is-9x16, &.is-9by16, &.is-vertical {
+
+      padding-bottom: 178%;
+
+      }
+
+    }
+
+  }
